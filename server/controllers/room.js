@@ -35,6 +35,7 @@ export const updateRoom = async (req, res, next) => {
 }
 export const updateRoomAvailability = async (req, res, next) => {
   try {
+    // recommended updateOne method for nested arrays
     await Room.updateOne(
       { 'roomNumbers._id': req.params.id },
       {
