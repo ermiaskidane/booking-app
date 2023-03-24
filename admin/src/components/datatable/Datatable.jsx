@@ -58,8 +58,8 @@ const Datatable = ({ columns }) => {
       {console.log('hellow')}
       <div className='datatable'>
         <div className='datatableTitle'>
-          Add New User
-          <Link to='/users/new' className='link'>
+          {path}
+          <Link to={`/${path}/new`} className='link'>
             Add New
           </Link>
         </div>
